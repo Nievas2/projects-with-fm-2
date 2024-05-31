@@ -5,7 +5,7 @@ export default function Card({ data }: { data: CardType }) {
   return (
     <main>
       <section>
-        <Image
+        <img
           src={data.logo}
           alt={data.company}
           width={50}  
