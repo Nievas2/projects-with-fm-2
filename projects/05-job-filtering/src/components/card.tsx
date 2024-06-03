@@ -25,7 +25,7 @@ export default function Card({
 
   return (
     <main className="flex flex-col sm:flex-row shadow-xl rounded-md border-l-4 border-[#5ba4a4] h-30 w-3/4 p-4 gap-5">
-      <section className="sm:basis-2/12 rounded-full flex items-center">
+      <section className="  sm:basis-5/12 md:basis-2/12 rounded-full flex items-center">
         <div>
           <img
             src={data.logo}
@@ -34,7 +34,7 @@ export default function Card({
           />
         </div>
       </section>
-      <section className="flex sm:basis-3/12 flex-col flex-grow gap-1">
+      <section className="flex sm:basis-4/12 md:basis-3/12 flex-col flex-grow gap-1">
         <div className="flex flex-row gap-1 items-center">
           <h1 className="text-[#5ba4a4] text-sm font-semibold">
             {data.company}
@@ -65,7 +65,7 @@ export default function Card({
           <p className="font-extralight text-xs">{data.location}</p>
         </div>
       </section>
-      <section className="flex sm:basis-6/12 flex-grow gap-5 align-middle justify-normal sm:justify-end">
+      <section className="flex sm:basis-3/12 md:basis-6/12 flex-grow gap-5 align-middle justify-normal sm:justify-end">
         <div className="gap-5 content-center">
           {data.languages.map((language) => (
             <button
