@@ -46,7 +46,7 @@ export default function Home() {
             >
               <span className="px-1 text-sm">{data}</span>
               <button
-                className="bg-[#5ba4a4] p-2 rounded-r-sm"
+                className="bg-[#5ba4a4] p-2 rounded-r-sm hover:bg-slate-950"
                 onClick={() =>
                   setLanguages(languages.filter((item) => item !== data))
                 }
